@@ -1,45 +1,50 @@
 /* button #00ADEF */
 
-body{
+body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   box-sizing: border-box;
-  background-color: rgb(1,1,80);
-  color:black;
+  background-color: rgb(1, 1, 80);
+  color: black;
 }
-header{
-   background-color: #F0F0F0;
-  width:100%;
+
+header {
+  background-color: #F0F0F0;
+  width: 100%;
   border: 1px solid black;
   /* box-shadow: 0px 0px 10px 0px #F0F0F0; */
 }
-header h1{
+
+header h1 {
   font-family: 'Brush Script MT';
-  color:black;
+  color: black;
   text-align: center;
   padding: 1rem;
   text-shadow: 2px 2px 4px #e6c6c6;
   font-size: 2.1rem;
-  margin:0;
+  margin: 0;
 }
-main{
+
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  height:100%;
+  height: 100%;
 }
-.input-section{
+
+.input-section {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
   margin-bottom: 2rem;
 }
-.input-section input{
+
+.input-section input {
   width: 100%;
   padding: 0.5rem;
   border-top-left-radius: 5px;
@@ -48,7 +53,8 @@ main{
   outline: none;
   font-size: 1.1rem;
 }
-.input-section button{
+
+.input-section button {
   padding: 0.5rem;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -59,32 +65,37 @@ main{
   font-size: 1.1rem;
   cursor: pointer;
 }
-.todo-list{
-  background-color:#F0F0F0;
-  max-height: 20rem;
+
+.todo-list {
+  background-color: #F0F0F0;
+  max-height: 18rem;
   overflow: auto;
-  width:50%;
-  padding:1rem;
-  border-radius:5px;
+  width: 50%;
+  padding: 1rem;
+  border-radius: 5px;
 }
-.all-list{
-  width:100%;
+
+.all-list {
+  width: 100%;
 }
-.Single-list{
+
+.Single-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width:100%;
-  border-bottom:1px solid lightgrey; 
-  
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+
 }
-.list-text{
+
+.list-text {
   font-size: 1.1rem;
-  padding:1rem;
-  width:70%;
+  padding: 1rem;
+  width: 70%;
   overflow-x: auto;
 }
-.removeBtn{
+
+.removeBtn {
   padding: 0.5rem;
   border-radius: 5px;
   outline: none;
@@ -94,21 +105,42 @@ main{
   font-size: 1.1rem;
   cursor: pointer;
 }
-.remove-btn{
+
+.input-checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.remove-btn {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width:100%;
-  margin-top:.5rem;
+  width: 50%;
+  margin-top: .5rem;
+  /* background-color:#e6c6c6; */
+  margin: auto;
 }
-.removeAll-btn{
+
+.removeAll-btn {
   padding: 0.5rem;
   border-radius: 5px;
   outline: none;
-  width:30%;
+  /* width:10%; */
   background-color: red;
   border: 1px solid red;
   color: black;
   font-size: 1.1rem;
   cursor: pointer;
+}
+
+.list-count {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.checkbox-style {
+  text-decoration: line-through;
 }
